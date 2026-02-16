@@ -6,7 +6,7 @@
   <div class="flex flex-row justify-between" >
     <h2 class="text-base font-medium tracking-tight ">Students</h2>
 
-    <button @click="openAddModal" class="mr-3 mb-3 text-red-400">Add Student</button>
+    <button @click="openAddModal" class="mr-3 mb-3 text-blue-600 hover-light">Add Student</button>
 </div>
     <StudentList
       :students="students"
@@ -17,7 +17,7 @@
     <Modal v-if="showModal" @close="closeModal">
       <StudentForm
         :student="selectedStudent"
-        @save="saveStudent"
+        @save="saveStudent" 
       />
     </Modal>
   </div>

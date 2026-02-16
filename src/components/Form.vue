@@ -1,12 +1,12 @@
 <template>
-  <form @submit.prevent="handleSubmit">
+  <form class="flex flex-col " @submit.prevent="handleSubmit">
     <h3>{{ student?.id ? 'Edit Student' : 'Add Student' }}</h3>
 
-    <input v-model="form.name" placeholder="Name" required />
-    <input v-model="form.age" type="number" placeholder="Age" required />
-    <input v-model="form.email" type="email" placeholder="Email" required />
+    <input class="mb-3 p-2" v-model="form.name" placeholder="Name" required />
+    <input class="mb-3 p-2" v-model="form.age" type="number" placeholder="Age" required />
+    <input class="mb-3 p-2" v-model="form.email" type="email" placeholder="Email" required />
 
- <v-btn type="submit">Save</v-btn>
+    <button type="submit" class=" hover:text-blue-600">Save</button>
   </form>
 </template>
 
@@ -39,13 +39,3 @@ const handleSubmit = () => {
 }
 </script>
 
-<style scoped>
-form {
-  display: flex;
-  flex-direction: column;
-}
-input {
-  margin-bottom: 10px;
-  padding: 8px;
-}
-</style>

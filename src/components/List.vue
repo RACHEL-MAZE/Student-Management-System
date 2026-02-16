@@ -14,9 +14,9 @@
         <td>{{ student.name }}</td>
         <td>{{ student.age }}</td>
         <td>{{ student.email }}</td>
-        <td>
-          <button @click="$emit('edit', student)">Edit</button>
-          <button @click="$emit('delete', student.id)">Delete</button>
+        <td class="flex justify-evenly">
+          <button class="text-purple-900 hover:text-purple-400" @click="$emit('edit', student)">Edit</button>
+          <button class="text-red-900 hover:text-red-400" @click="$emit('delete', student.id)">Delete</button>
         </td>
       </tr>
     </tbody>
