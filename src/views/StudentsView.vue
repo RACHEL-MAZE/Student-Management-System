@@ -1,9 +1,13 @@
 <template>
-  <div class="p-20">
-    <h2>Students</h2>
+  <div class="p-5">
+      <div class="font-bold ">
+    <h1>Welcome to Student Management System</h1>
+  </div>
+  <div class="flex flex-row justify-between" >
+    <h2 class="text-base font-medium tracking-tight ">Students</h2>
 
-    <button @click="openAddModal">Add Student</button>
-
+    <button @click="openAddModal" class="mr-3 mb-3 text-red-400">Add Student</button>
+</div>
     <StudentList
       :students="students"
       @edit="openEditModal"
@@ -61,7 +65,5 @@ const deleteStudent = (id) => {
 
 <style scoped>
 
-button {
-  margin-bottom: 15px;
-}
+
 </style>

@@ -6,7 +6,7 @@
     <input v-model="form.age" type="number" placeholder="Age" required />
     <input v-model="form.email" type="email" placeholder="Email" required />
 
-    <button type="submit">Save</button>
+ <v-btn type="submit">Save</v-btn>
   </form>
 </template>
 

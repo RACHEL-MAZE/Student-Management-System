@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="bg-black text-white min-h-screen">
     <div class="bg-green-500 text-white p-2">nav</div>
     <div>hii
@@ -16,5 +16,5 @@
 export default {
   name: "App",
 };
-</script>
+</script> -->
 

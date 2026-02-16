@@ -20,7 +20,6 @@ import {  RouterView } from 'vue-router'
   <div>
     <nav class="nav">
       <router-link to="/">Home</router-link>
-      <router-link to="/students">Students</router-link>
     </nav>
 
     <router-view />
