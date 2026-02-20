@@ -6,7 +6,7 @@
   <div class="flex flex-row justify-between" >
     <h2 class="text-base font-medium tracking-tight ">Students</h2>
 
-    <button @click="openAddModal" class="mr-3 mb-3 text-blue-600 hover-light">Add Student</button>
+    <button @click="openAddModal" class="mr-3 mb-3 text-[#1353aa] hover:text-[#2f81f5]">Add Student</button>
 </div>
     <StudentList
       :students="students"

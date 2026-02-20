@@ -18,8 +18,8 @@ import {  RouterView } from 'vue-router'
 </template> -->
 <template>
   <div>
-    <nav class="nav">
-      <router-link to="/">Home</router-link>
+    <nav class="p-3 bg-[#1353aa]">
+      <router-link to="/" class="text-white font-bold">Home</router-link>
     </nav>
 
     <router-view />
@@ -31,11 +31,7 @@ import {  RouterView } from 'vue-router'
   padding: 15px;
   background: #333;
 }
-.nav a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-}
+
 </style>
 
 

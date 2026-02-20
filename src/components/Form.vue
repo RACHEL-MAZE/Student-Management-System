@@ -6,7 +6,7 @@
     <input class="mb-3 p-2" v-model="form.age" type="number" placeholder="Age" required />
     <input class="mb-3 p-2" v-model="form.email" type="email" placeholder="Email" required />
 
-    <button type="submit" class=" hover:text-blue-600">Save</button>
+    <button type="submit" class=" text-[#1353aa] hover:text-[#2f81f5]">Save</button>
   </form>
 </template>
 
