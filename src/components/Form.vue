@@ -6,12 +6,17 @@
     <input class="mb-3 p-2" v-model="form.age" type="number" placeholder="Age" required />
     <input class="mb-3 p-2" v-model="form.email" type="email" placeholder="Email" required />
 
-    <button type="submit" class=" text-[#1353aa] hover:text-[#2f81f5]">Save</button>
+       <button type="submit" class="text-[#1353aa] hover:text-[#2f81f5]">
+      Save
+    </button>
   </form>
 </template>
 
 <script setup>
 import { reactive, watch } from 'vue'
+import { toast } from 'vue3-toastify'
+
+import 'vue3-toastify/dist/index.css'
 
 const props = defineProps(['student'])
 const emit = defineEmits(['save'])
@@ -34,8 +39,18 @@ watch(() => props.student, (newVal) => {
   }
 }, { immediate: true })
 
+
+
 const handleSubmit = () => {
   emit('save', { ...form })
+
+   toast.success('Saved successfully!', {
+    autoClose: 1000,
+  })
+  
+
 }
+
+
 </script>
 

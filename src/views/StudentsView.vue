@@ -63,7 +63,4 @@ const deleteStudent = (id) => {
 }
 </script>
 
-<style scoped>
 
-
-</style>
