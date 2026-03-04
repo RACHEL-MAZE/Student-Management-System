@@ -2,8 +2,8 @@
   <form class="flex flex-col " @submit.prevent="handleSubmit">
     <h3>{{ student?.id ? 'Edit Student' : 'Add Student' }}</h3>
 
-    <input class="mb-3 p-2" v-model="form.name" placeholder="Name" required />
-    <input class="mb-3 p-2" v-model="form.age" type="number" placeholder="Age" required />
+    <input class="mb-3 p-2" v-model="form.name" type="text" placeholder="Name"   pattern="^[A-Za-z\s]+$" title="Name must contain letters only" required />
+    <input class="mb-3 p-2" v-model="form.age" type="number" min="15" max="40" placeholder="Age" required />
     <input class="mb-3 p-2" v-model="form.email" type="email" placeholder="Email" required />
 
        <button type="submit" class="text-[#1353aa] hover:text-[#2f81f5]">

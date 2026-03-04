@@ -1,7 +1,7 @@
 <template>
   <button
     :type="type"
-    :class="buttonClass"
+     class="text-[#1353aa] hover:text-[#2f81f5]"
     @click="$emit('click')"
   >
     {{ label }}
@@ -13,12 +13,8 @@ defineProps({
   label: String,
   type: {
     type: String,
-    default: "button"
   },
-  buttonClass: {
-    type: String,
-    default: "text-blue-600 hover:text-blue-400"
-  }
+
 })
 
 defineEmits(['click'])
