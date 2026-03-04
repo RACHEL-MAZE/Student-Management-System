@@ -21,6 +21,7 @@ import 'vue3-toastify/dist/index.css'
 const props = defineProps(['student'])
 const emit = defineEmits(['save'])
 
+
 const form = reactive({
   id: null,
   name: '',
