@@ -7,8 +7,7 @@
     <div class="flex flex-row justify-between">
       <h2 class="text-base font-medium tracking-tight">Students</h2>
 
-      <button
-        @click="openAddModal" class="mr-3 mb-3 text-[#1353aa] hover:text-[#2f81f5]" >Add Student</button>
+       <Button variant="primary" @click="openAddModal"  >Add Student</Button>
     </div>
 
     <SharedTable
@@ -17,8 +16,8 @@
     >
       <template #actions="{ item }">
         <div class="flex justify-evenly">
-          <button class="text-purple-900 hover:text-purple-400" @click="openEditModal(item)" >  Edit </button>
-          <button class="text-red-900 hover:text-red-400" @click="deleteStudent(item.id)" > Delete </button>
+          <Button class="text-purple-900 hover:text-purple-400" @click="openEditModal(item)" >  Edit </Button>
+          <Button class="text-red-900 hover:text-red-400" @click="deleteStudent(item.id)" > Delete </Button>
         </div>
       </template>
     </SharedTable>
@@ -37,6 +36,7 @@
 <script setup>
 import { ref } from 'vue'
 import SharedTable from '../components/shared/Table.vue'
+import Button from '../components/shared/Buttons.vue'
 import StudentForm from '../components/Form.vue'
 import Modal from '../components/Modal.vue'
 

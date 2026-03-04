@@ -67,7 +67,7 @@ defineEmits(['edit','delete'])
         <tr v-if="!data.length">
           <td
             :colspan="columns.length + ($slots.actions ? 1 : 0)"
-            class="text-center p-3"
+            class="text-center"
           >
             No data available
           </td>

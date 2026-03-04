@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mb-3">
+  <div class="flex flex-col ">
     <input
       :type="type"
       :placeholder="placeholder"
