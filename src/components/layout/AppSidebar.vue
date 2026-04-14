@@ -1,7 +1,9 @@
 <template>
   <aside class="fixed top-0 left-0 h-screen w-[220px] bg-[#0f2a44] text-white p-5">
     
-    <h2 class="text-lg font-bold mb-8">Admin Panel</h2>
+    <h2 c
+    
+    lass="text-lg font-bold mb-8">Admin Panel</h2>
 
     <nav class="flex flex-col gap-4">
       

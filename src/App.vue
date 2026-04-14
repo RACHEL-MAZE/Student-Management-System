@@ -18,9 +18,9 @@ import {  RouterView } from 'vue-router'
 </template> -->
 <template>
   <div>
-    <nav class="p-3 bg-[#1353aa]">
+    <!-- <nav class="p-3 bg-[#1353aa]">
       <router-link to="/" class="text-white font-bold">Home</router-link>
-    </nav>
+    </nav> -->
 
     <router-view />
   </div>
