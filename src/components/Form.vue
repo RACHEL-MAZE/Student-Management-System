@@ -1,12 +1,51 @@
 <template>
-  <form class="flex flex-col " @submit.prevent="handleSubmit">
-    <h3>{{ student?.id ? 'Edit Student' : 'Add Student' }}</h3>
+  <form @submit.prevent="handleSubmit">
+    <div
+      class="no-scrollbar relative w-full max-w-full overflow-y-auto rounded-3xl bg-white p-6 dark:bg-gray-900"
+    >
+      <!-- Title -->
+      <h5
+        class="mb-2 font-semibold text-gray-800 text-xl dark:text-white/90"
+      >
+        {{ student?.id ? 'Edit Student' : 'Add Student' }}
+      </h5>
 
-    <Inputs class="mb-3 p-1" v-model="form.name" type="text" placeholder="Name"   pattern="^[A-Za-z\s]+$" title="Name must contain letters only" required />
-    <Inputs class="mb-3 p-1" v-model="form.age" type="number" min="15" max="40" placeholder="Age" required />
-    <Inputs class="mb-3 p-1" v-model="form.email" type="email" placeholder="Email" required />
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        Fill in student details below
+      </p>
 
-       <Buttons type="submit" variant="primary">Save  </Buttons>
+      <!-- Form Fields -->
+<div class="mt-6 space-y-5">
+  
+  <div>
+    <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
+      Name
+    </label>
+    <Inputs v-model="form.name" placeholder="Enter name" required />
+  </div>
+
+  <div>
+    <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
+      Age
+    </label>
+    <Inputs v-model="form.age" type="number" min="15" max="40" placeholder="Enter age" required />
+  </div>
+
+  <div>
+    <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
+      Email
+    </label>
+    <Inputs v-model="form.email" type="email" placeholder="Enter email" required />
+  </div>
+
+</div>
+
+<!-- Buttons -->
+<div class="flex items-center gap-3 mt-6 sm:justify-end">
+  <Buttons variant="secondary" type="button">Close</Buttons>
+  <Buttons type="submit" variant="primary">Save Student</Buttons>
+</div>
+    </div>
   </form>
 </template>
 

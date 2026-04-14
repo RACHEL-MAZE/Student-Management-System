@@ -30,21 +30,21 @@ const props = defineProps({
 defineEmits(["click"])
 
 const buttonClasses = computed(() => {
-  const base =
-    "px-4 py-1 rounded transition duration-200 font-medium"
+ const base =
+    "flex justify-center items-center px-4 py-2.5 rounded-lg text-sm font-medium transition w-full sm:w-auto"
 
   const variants = {
     primary:
-      " text-[#1353aa] hover:text-[#2f81f5]",
-
-    danger:
-      "bg-red-600 text-white hover:bg-red-700",
+      "bg-brand-500 text-white hover:bg-brand-600",
 
     secondary:
-      "bg-gray-600 text-white hover:bg-gray-700",
+      "border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400",
+
+    danger:
+      "bg-red-500 text-white hover:bg-red-600",
 
     outline:
-      "border border-blue-600 text-blue-600 hover:bg-blue-50"
+      "border border-blue-500 text-blue-600 hover:bg-blue-50"
   }
 
   const disabledStyle = props.disabled

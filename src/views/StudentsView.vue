@@ -1,39 +1,38 @@
 <template>
-  <div class="p-5">
-    <div class="font-bold">
-      <h1>Welcome to Student Management System</h1>
+  <AdminLayout>
+    <div>
+      <div class="font-bold mb-4">
+        <h1>Welcome to Student Management System</h1>
+      </div>
+
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-base font-medium">Students</h2>
+
+        <Button variant="primary" @click="openAddModal">
+          Add Student
+        </Button>
+      </div>
+
+      <SharedTable :columns="columns" :data="students">
+        <template #actions="{ item }">
+          <div class="flex gap-3">
+            <Button @click="openEditModal(item)">Edit</Button>
+            <Button variant="danger" @click="deleteStudent(item.id)">
+              Delete
+            </Button>
+          </div>
+        </template>
+      </SharedTable>
+
+      <Modal v-if="showModal" @close="closeModal">
+        <StudentForm :student="selectedStudent" @save="saveStudent" />
+      </Modal>
     </div>
-
-    <div class="flex flex-row justify-between">
-      <h2 class="text-base font-medium tracking-tight">Students</h2>
-
-       <Button variant="primary" @click="openAddModal"  >Add Student</Button>
-    </div>
-
-    <SharedTable
-      :columns="columns"
-      :data="students"
-    >
-      <template #actions="{ item }">
-        <div class="flex justify-evenly">
-          <Button class="text-purple-900 hover:text-purple-400" @click="openEditModal(item)" >  Edit </Button>
-          <Button class="text-red-900 hover:text-red-400" @click="deleteStudent(item.id)" > Delete </Button>
-        </div>
-      </template>
-    </SharedTable>
-
-
-    <Modal v-if="showModal" @close="closeModal">
-      <StudentForm
-        :student="selectedStudent"
-        @save="saveStudent"
-      />
-    </Modal>
-
-  </div>
+  </AdminLayout>
 </template>
 
 <script setup>
+import AdminLayout from '../components/layout/AdminLayout.vue'
 import { ref } from 'vue'
 import SharedTable from '../components/shared/Table.vue'
 import Button from '../components/shared/Buttons.vue'

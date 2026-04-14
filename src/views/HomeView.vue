@@ -1,16 +1,20 @@
 <template>
-  <div class=" text-white min-h-screen">
-  <Navbar class/>
+  <AdminLayout>
+  <div class=" text-black min-h-screen">
   
+  hiiiiiiii
+
   
  
   </div>
-
+</AdminLayout>
 </template>
 
 
 <script setup>
-import Navbar from '../components/Navbar.vue';
+import AdminLayout from '../components/layout/AdminLayout.vue';
+
+
 
 
 </script>
