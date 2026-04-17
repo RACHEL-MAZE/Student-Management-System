@@ -3,9 +3,9 @@
    <div class="flex min-h-screen bg-gray-100 items-center justify-center md:px-6">
     <div class="flex w-[800px] h-[650px] rounded-2xl shadow-2xl overflow-hidden bg-white">
       
-      <div class="w-1/2 ml-5 mr-3 flex flex-col justify-center">
-        <h2 class="text-2xl font-bold mb-2 text-gray-800">Login to Your Account</h2>
-        <p>Welcome back!</p>
+      <div class="w-1/2 ml-5 mr-5 flex flex-col justify-center">
+        <h1 class="text-2xl font-bold mb-2 text-gray-800">Register to Your Account</h1>
+        <p>Enter into a world filled with success!</p>
 
 
 <form class="mt-5"  @submit.prevent="handleSubmit">
@@ -28,16 +28,17 @@
             class="mb-3"
     ></v-text-field>
 
-  
+  <div>
 <button>
   <span class="text">Register</span>
 </button>
-
+<div> Have an Account? <router-link to="/login" class="text-brand-500 hover:underline">Login</router-link></div>
+</div>
 </form>
       </div>
 
       <div class="w-3/4  ">
-        <img src="../assets/images/register.png" alt="Login" class="h-full w-full object-cover" />
+        <img src="../assets/images/register.jpg" alt="Login" class="h-full w-full object-cover" />
       </div>
     </div>
 
@@ -71,17 +72,17 @@ const validateForm = () => {
 
   errors.value = { fname: '', mname: '', lname: '', email: '', password: '' }
 
-  if (name.value.length < 3) {
+  if (fname.value.length < 3) {
     errors.value.fname = 'First name must be at least 3 characters'
     valid = false
   }
 
-    if (name.value.length < 3) {
+    if (mname.value.length < 3) {
     errors.value.mname = 'Middle name must be at least 3 characters'
     valid = false
   }
 
-    if (name.value.length < 3) {
+    if (lname.value.length < 3) {
     errors.value.lname = 'Last name must be at least 3 characters'
     valid = false
   }

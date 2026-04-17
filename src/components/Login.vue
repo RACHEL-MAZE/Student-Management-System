@@ -25,11 +25,13 @@
             class="mb-3"
     ></v-text-field>
 
-  
+  <div>
 <button>
   <span class="text">Login</span>
 </button>
 
+<div> Don't have an account? <router-link to="/register" class="text-brand-500 hover:underline">Register</router-link></div>
+</div>
 </form>
    </div>
     </div>
