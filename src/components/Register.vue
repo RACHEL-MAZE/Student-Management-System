@@ -2,9 +2,7 @@
  
    <div class="flex min-h-screen bg-gray-100 items-center justify-center md:px-6">
     <div class="flex w-[800px] h-[650px] rounded-2xl shadow-2xl overflow-hidden bg-white">
-      <div class="w-3/4  ">
-        <img src="../assets/images/login.jpg" alt="Login" class="h-full w-full object-cover" />
-      </div>
+      
       <div class="w-1/2 ml-5 mr-3 flex flex-col justify-center">
         <h2 class="text-2xl font-bold mb-2 text-gray-800">Login to Your Account</h2>
         <p>Welcome back!</p>
@@ -36,6 +34,10 @@
 </button>
 
 </form>
+      </div>
+
+      <div class="w-3/4  ">
+        <img src="../assets/images/register.png" alt="Login" class="h-full w-full object-cover" />
       </div>
     </div>
 

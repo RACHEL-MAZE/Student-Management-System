@@ -1,7 +1,7 @@
 <template>
  
    <div class="flex min-h-screen bg-gray-100 items-center justify-center md:px-6">
-    <div class="flex w-[800px] h-[650px] rounded-2xl shadow-2xl overflow-hidden bg-white">
+    <div class="flex w-[800px] h-[500px] rounded-2xl shadow-2xl overflow-hidden bg-white">
       <div class="w-3/4  ">
         <img src="../assets/images/login.jpg" alt="Login" class="h-full w-full object-cover" />
       </div>
