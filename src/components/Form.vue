@@ -40,7 +40,7 @@
 
 </div>
 
-<!-- Buttons -->
+
 <div class="flex items-center gap-3 mt-6 sm:justify-end">
   <Buttons variant="secondary" type="button">Close</Buttons>
   <Buttons type="submit" variant="primary">Save Student</Buttons>
