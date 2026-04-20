@@ -1,12 +1,12 @@
 <template>
-  
-  <div class="text-white hover:underline text-yellow-600" @click="Login">Login</div>
- <div class="text-white hover:underline text-yellow-600">Register</div>
-    <div></div>
+  <div>
+  <div class="text-white hover:underline text-yellow-600" @click="$router.push('/login')">Login</div>
+ <div class="text-white hover:underline text-yellow-600" @click="$router.push('/register')">Register</div>
+    </div>
 </template>
 
 <script setup>
-import Login from './Login.vue';
+
 
 
 </script>
