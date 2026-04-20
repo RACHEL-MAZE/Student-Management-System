@@ -3,7 +3,6 @@
     <div
       class="no-scrollbar relative w-full max-w-full overflow-y-auto rounded-3xl bg-white p-6 dark:bg-gray-900"
     >
-      <!-- Title -->
       <h5
         class="mb-2 font-semibold text-gray-800 text-xl dark:text-white/90"
       >
@@ -14,7 +13,6 @@
         Fill in student details below
       </p>
 
-      <!-- Form Fields -->
 <div class="mt-6 space-y-5">
   
   <div>
