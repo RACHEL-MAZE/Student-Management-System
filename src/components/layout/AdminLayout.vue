@@ -1,18 +1,26 @@
 <template>
-  <div class="flex min-h-screen bg-gray-100">
+ 
     
+    <div>
+  <div class="flex flex-1 bg-gray-100 min-h-screen">
     
-    <AppSidebar />
 
-    <div class="flex-1 ml-[220px]">
+    
+    <div class="w-[220px]">
+    <AppSidebar />
+</div>
+   
+
+    <div class="flex-1  ">
       <AppHeader />
 
-      <main class="p-6">
+      <main class="pl-2 pt-3">
         <slot />
       </main>
     </div>
 
   </div>
+</div>
 </template>
 
 <script setup>
